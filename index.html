@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    .list-group-item,
+    .card {
+      background-color: lightgray
+    }
+  </style>
+  <style>
+    body {
+      background-color: rgb(75, 75, 75);
+      font-family: monospace;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra de navegação-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#victormiyagaki">Victor Miyagaki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#apresentacao">Apresentação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificados">Certificados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carouselExampleCaptions">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Foto de perfil-->
+  <div>
+    <a style="position:relative; top: -70px;" id="victormiyagaki"></a>
+    <div class="text-center" style="margin-top: 5rem;">
+      <img class="img-thumbnail rounded rounded-circle" src="victor.png" style="width: 12rem">
+      <h1>Victor Miyagaki</h1>
+      <p>C# - SQL - HTML - CSS - JS</p>
+    </div>
+  </div>
+
+  <!-- Apresentação-->
+  <div class="container my-5">
+    <a style="position:relative; top: -70px;" id="apresentacao"></a>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Apresentação</h3>
+        <p class="card-text text-center">Sou um estudante de Análise e Desenvolvimento de Sistemas da FATEC, estou no 1º
+          módulo do curso.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificados-->
+  <div class="container my-5">
+    <a style="position:relative; top: -70px;" id="certificados"></a>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Certificados</h3>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-10">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">C# primeiros passos: Lógica de Programação e Algoritmos - Nelio Alves <span
+                  class="badge text-bg-primary">2022</span> <span class="badge text-bg-secondary">UDEMY</span>
+                <br><sub><em><a href="https://ude.my/UC-c1541024-818e-4273-9092-68d7b379cf5b"
+                      target="_blank">https://ude.my/UC-c1541024-818e-4273-9092-68d7b379cf5b</a></em></sub>
+              </li>
+              <li class="list-group-item">C# COMPLETO Programação Orientada a Objetos + Projetos - Nelio Alves <span
+                  class="badge text-bg-primary">2022</span> <span class="badge text-bg-secondary">UDEMY</span></li>
+              <li class="list-group-item">Oficina de Bootstrap - Diego Meidas <span
+                  class="badge text-bg-primary">2022</span> <span class="badge text-bg-secondary">FATEC</span></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projetos-->
+  <div class="container my-5">
+    <a style="position:relative; top: -70px;" id="projetos"></a>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Projetos</h3>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-10">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Jogo de Xadrez <span class="badge text-bg-primary">2022</span> <span
+                  class="badge text-bg-secondary">Nelio Alves</span>
+                <br><sub><em><a
+                      href="https://github.com/VictorMiyagaki/jogoDeXadrez">https://github.com/VictorMiyagaki/jogoDeXadrez</a></em></sub>
+              </li>
+              <li class="list-group-item">Sistema Web com ASP .NET Core MVC e Entity Framework <span
+                  class="badge text-bg-primary">2022</span> <span class="badge text-bg-secondary">Nelio Alves</span>
+              </li>
+              <li class="list-group-item">Currículo <span class="badge text-bg-primary">2022</span> <span
+                  class="badge text-bg-secondary">Diego Meidas</span></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <a style="position:relative; top: -70px;" id="carouselExampleCaptions"></a>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="xadrez.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Iniciando a partida de Xadrez</h5>
+          <p>O jogador deve digitar a origem da peça a ser movida.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="xadrez2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Posição de destino</h5>
+          <p>Agora o jogador deve digitar o destino da peça a ser movida, as posições possíveis estão destacadas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="xadrez3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Peça movida</h5>
+          <p>A peça foi movida e o turno passou para o outro jogador.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Contato-->
+  <footer class="bg-dark py-5">
+    <a style="position:relative; top: -70px;" id="contato"></a>
+    <h3 class="text-center text-white">Contato</h3>
+    <div align="center">
+      <div class="col"></div>
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-white">Nome</label>
+          <input type="text" class="form-control" id="" placeholder="Digite o seu nome aqui">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-white">Email</label>
+          <input type="email" class="form-control" id="" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Mensagem</label>
+          <textarea class="form-control" id="" rows="3" placeholder="Digite a sua mensagem aqui"></textarea>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
